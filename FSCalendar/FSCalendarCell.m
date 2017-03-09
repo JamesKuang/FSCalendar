@@ -411,7 +411,8 @@ OFFSET_PROPERTY(preferredEventOffset, PreferredEventOffset, _appearance.eventOff
 - (void)layoutSubviews
 {
     [super layoutSubviews];
-    CGFloat diameter = MIN(MIN(self.fs_width, self.fs_height),FSCalendarMaximumEventDotDiameter);
+//    CGFloat diameter = MIN(MIN(self.fs_width, self.fs_height),FSCalendarMaximumEventDotDiameter);
+    CGFloat diameter = FSCalendarCustomEventDotDiameter;
     self.contentView.fs_height = self.fs_height;
     self.contentView.fs_width = (self.numberOfEvents*2-1)*diameter;
     self.contentView.center = CGPointMake(CGRectGetMidX(self.bounds), CGRectGetMidY(self.bounds));
@@ -422,7 +423,8 @@ OFFSET_PROPERTY(preferredEventOffset, PreferredEventOffset, _appearance.eventOff
     [super layoutSublayersOfLayer:layer];
     if (layer == self.layer) {
         
-        CGFloat diameter = MIN(MIN(self.fs_width, self.fs_height),FSCalendarMaximumEventDotDiameter);
+//        CGFloat diameter = MIN(MIN(self.fs_width, self.fs_height),FSCalendarMaximumEventDotDiameter);
+        CGFloat diameter = FSCalendarCustomEventDotDiameter;
         for (int i = 0; i < self.eventLayers.count; i++) {
             CALayer *eventLayer = [self.eventLayers pointerAtIndex:i];
             eventLayer.hidden = i >= self.numberOfEvents;
