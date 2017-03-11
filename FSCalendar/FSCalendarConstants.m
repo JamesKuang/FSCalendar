@@ -28,7 +28,7 @@ CGFloat const FSCalendarCustomEventDotDiameter = 6.0;
 CGFloat const FSCalendarStandardScopeHandleHeight = 26;
 
 NSInteger const FSCalendarDefaultHourComponent = 0;
-NSInteger const FSCalendarMaximumNumberOfEvents = 4;
+NSInteger const FSCalendarMaximumNumberOfEvents = 3;
 
 NSString * const FSCalendarDefaultCellReuseIdentifier = @"_FSCalendarDefaultCellReuseIdentifier";
 NSString * const FSCalendarBlankCellReuseIdentifier = @"_FSCalendarBlankCellReuseIdentifier";
