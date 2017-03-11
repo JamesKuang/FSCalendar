@@ -227,19 +227,19 @@ typedef NS_ENUM(NSUInteger, FSCalendarOrientation) {
     self.collectionView = collectionView;
     self.collectionViewLayout = collectionViewLayout;
     
-    if (!FSCalendarInAppExtension) {
-        
-        UIView *view = [[UIView alloc] initWithFrame:CGRectZero];
-        view.backgroundColor = FSCalendarStandardLineColor;
-        [self addSubview:view];
-        self.topBorder = view;
-        
-        view = [[UIView alloc] initWithFrame:CGRectZero];
-        view.backgroundColor = FSCalendarStandardLineColor;
-        [self addSubview:view];
-        self.bottomBorder = view;
-        
-    }
+//    if (!FSCalendarInAppExtension) {
+//        
+//        UIView *view = [[UIView alloc] initWithFrame:CGRectZero];
+//        view.backgroundColor = FSCalendarStandardLineColor;
+//        [self addSubview:view];
+//        self.topBorder = view;
+//        
+//        view = [[UIView alloc] initWithFrame:CGRectZero];
+//        view.backgroundColor = FSCalendarStandardLineColor;
+//        [self addSubview:view];
+//        self.bottomBorder = view;
+//        
+//    }
     
     [self invalidateLayout];
     [self registerMainRunloopObserver];
